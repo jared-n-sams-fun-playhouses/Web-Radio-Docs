@@ -5,8 +5,7 @@
 An easy way to create you're own radio show.
 
 ** System Overview
-#+ATTR_HTML: 
 [[file:overview.svg]]
 
-
-#+include: "broadcast_controller.org" :minlevel 1
+** Broadcast Controller
+[[file:broadcast_controller.org]]
