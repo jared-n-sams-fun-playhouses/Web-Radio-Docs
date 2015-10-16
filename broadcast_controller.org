@@ -1,0 +1,54 @@
+#+Title: Web Radio
+#+Author: Jared Smith <jared.smith.jrod@gmail.com>
+
+* Broadcast Controller
+This is a brief description of what kind of functionallity the broadcast controller contains. There are 3 main components: Host, Server, Listener. These share some functionallity with each other, mostly between the Host and Server. The controller will also be time sensitive due to streaming audio.
+
+For now, functionallity is described in point form. There's no flow control map yet, state changes are only described at the moment.
+** States
+- Online/Offline
+- Preroll
+- Host's Voice
+- Play song
+- Change song
+** Host
+*** States
+**** Online/Offline
+- Changes Live state for the broadcast
+**** Preroll
+- if preroll is set
+  - Rolls when broadcast goes online
+- trigger when finished
+  - host's voice
+  - song playlist
+**** Host's Voice
+- enable microphone
+- microphone capture data transfer to server
+**** Play song
+- disable microphone
+- no audio data transfer on host's machine
+**** Change song
+- automated/manual signal
+** Server
+*** Online/Offline
+- recieve signal from host to start broadcast
+- start output buffer to Listeners
+*** Preroll
+- if preshow is set
+  - load preroll
+  - start dataflow
+- signal host's machine on/close to finish of preroll
+*** Host's Voice
+- dataflow from host's machine
+*** Play song
+- stop dataflow from host's machine
+- load song
+- output song to output buffer Listeners
+*** Change song
+- recieve signal from host's machine
+- gather info for the next song
+- start play song state change
+** Listener
+*** Online/Offline
+- load listener page
+*** Stream
