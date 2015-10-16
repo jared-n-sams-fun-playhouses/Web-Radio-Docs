@@ -5,12 +5,12 @@
 This is a brief description of what kind of functionallity the broadcast controller contains. There are 3 main components: Host, Server, Listener. These share some functionallity with each other, mostly between the Host and Server. The controller will also be time sensitive due to streaming audio.
 
 For now, functionallity is described in point form. There's no flow control map yet, state changes are only described at the moment.
-** States
-- Online/Offline
-- Preroll
-- Host's Voice
-- Play song
-- Change song
+
+The Host is the radio host or DJ if you will.
+
+The Server is where all the data is pieced together to create the radio show.
+
+The Listener is the viewer that will hear the completed stream.
 ** Host
 *** States
 **** Online/Offline

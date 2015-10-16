@@ -2,8 +2,11 @@
 #+Author: Jared Smith <jared.smith.jrod@gmail.com>
 
 * Web Radio
-Some description about it here.
+An easy way to create you're own radio show.
+
 ** System Overview
+#+ATTR_HTML: 
 [[file:overview.svg]]
-** Broadcast Controller
-link here
+
+
+#+include: "broadcast_controller.org" :minlevel 1
