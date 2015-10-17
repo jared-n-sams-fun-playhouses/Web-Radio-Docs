@@ -12,7 +12,7 @@ An easy way to create your own radio show.
 [[file:broadcast_controller.org]]
 
 ** Host Interface
-file:[[host_interface.org]]
+[[file:host_interface.org]]
 
 ** Server API
-file:server_api.org
+[[file:server_api.org]]
