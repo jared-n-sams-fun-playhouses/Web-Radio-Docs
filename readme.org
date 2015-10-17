@@ -4,9 +4,15 @@
 * Readme
 An easy way to create your own radio show.
 
-** System Overview
+* System Overview
 [[file:overview.png]]
 
-#+include: "broadcast_controller.org" :minlevel 1
-#+include: "host_interface.org"       :minlevel 1
-#+include: "server_api.org"           :minlevel 1
+* Components
+** Broadcast Controller
+[[file:broadcast_controller.org]]
+
+** Host Interface
+file:[[host_interface.org]]
+
+** Server API
+file:server_api.org
