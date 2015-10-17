@@ -2,3 +2,9 @@
 #+Author: Jared Smith <jared.smith.jrod@gmail.com>
 
 * Server API
+
+** Audio Data
+
+** User Authentication
+
+** Music Store Access

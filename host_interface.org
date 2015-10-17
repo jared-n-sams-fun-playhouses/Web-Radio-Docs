@@ -2,9 +2,25 @@
 #+Author: Jared Smith <jared.smith.jrod@gmail.com>
 
 * Host Interface
-This is where the DJ creates every part of their radio show.
-** Show Controls
+This is where the DJ creates every part of their radio show. For the time being, this interface will be made for a modern web browser. Latest versions of Chrome and Firefox have the access protocols we need, such as microphone access, AudioContext and websockets.
+
+Outbound data will include audio from microphone, broadcast control and user credentials.
+
+Inbound data will include music gallery, broadcast status/info and user authentication.
+
+** Broadcast Controls
+For a more in-depth look at Broadcast Functionality, see: [[file:broadcast_controller.org]]
+
+
 ** Visual Feedback View
-** Song Gallery
-** Playlist
+A visual indicator of audio from microphone capture. The display will probably be a simple bar graph or oscilloscope that will use html5 canvas.
+
+** Music Gallery
+A dedicated view to search for available music to add to the show playlist.
+
+** Playlist Editor
+Will also function as a show map.
+
 ** Text Chat View
+Will be exactly like Twitch.tv chat, however, not sure if we should use a irc backend.
+
