@@ -2,3 +2,9 @@
 #+Author: Jared Smith <jared.smith.jrod@gmail.com>
 
 * Host Interface
+This is where the DJ creates every part of their radio show.
+** Show Controls
+** Visual Feedback View
+** Song Gallery
+** Playlist
+** Text Chat View
